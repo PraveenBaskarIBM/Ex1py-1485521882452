@@ -42,7 +42,7 @@ class C1:
                                                    'INSTRUCTION_OBTAINED_SCORE.STAAR_v2014_Cat_2_(A.3)(B)[R]','INSTRUCTION_OBTAINED_SCORE.STAAR_v2014_Cat_4_(A.8)(A)[R]',
                                                    'INSTRUCTION_OBTAINED_SCORE.STAAR_v2014_Cat_5_(A.9)(C)[R]','INSTRUCTION_OBTAINED_SCORE.STAAR_v2014_Cat_3_(A.2)(A)[R]',
                                                    'INSTRUCTION_OBTAINED_SCORE.STAAR_v2014_Cat_5_(A.9)(D)[R]'])
-        print "One"
+        print data
         data[np.isnan(data)] = 0
         print('\n')
 
