@@ -31,6 +31,8 @@ print('connected to mongodb!, welcome to mongodb connection, have a fun')
 import numpy as np
 import pandas as pd
 import sklearn
+import cPickle as pickle
+from sklearn.feature_selection import RFE
 
 ## code ends
 
