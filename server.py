@@ -32,8 +32,8 @@ import numpy as np
 import pandas as pd
 import sklearn
 #from pandas import read_csv
-from sklearn.feature_selection import RFE
-from sklearn.linear_model import LogisticRegression
+#from sklearn.feature_selection import RFE
+#from sklearn.linear_model import LogisticRegression
 import cPickle as pickle
 
 # load data
