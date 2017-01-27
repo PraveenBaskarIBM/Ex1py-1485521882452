@@ -17,7 +17,9 @@ os.chdir('static')
 
 ##Code Begins
 # Feature Extraction with RFE
-#import numpy as np
+import numpy as np
+import pandas as pd
+import sklearn
 #from pandas import read_csv
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import LogisticRegression
