@@ -82,15 +82,6 @@ with open('test3_model.pkl', 'rb') as f:
     #return df2
 
 ## code ends
-## Flask for HTML Output
-from flask import Flask, render_template
-app = Flask(__name__)
-app._static_folder = '/Users/praveenkumarb/Downloads/Ex1py/static'
-@app.route("/")
-def main():
-	return render_template('index.html', tables=[df2.to_html(classes='table',index=False)])
-if __name__ == "__main__":
-	app.run(host='0.0.0.0', port=8019)
 
 ##VCAP services End
 
