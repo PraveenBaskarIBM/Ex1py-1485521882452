@@ -42,7 +42,7 @@ data = pd.read_csv('p_test1.csv', header=None, names=['Risk','INSTRUCTION_OBTAIN
                                                    'INSTRUCTION_OBTAINED_SCORE.STAAR_v2014_Cat_5_(A.9)(D)[R]'])
 
 data[np.isnan(data)] = 0
-print data
+#print data
 
 print('\n')
 with open('test3_model.pkl', 'rb') as f:
