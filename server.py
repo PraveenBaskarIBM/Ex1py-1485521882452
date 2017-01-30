@@ -76,7 +76,7 @@ with open('tests_model.pkl', 'rb') as f:
     df1 = pd.concat(frame1, axis=1, join_axes=[data.index])
     frame2 = [df1, df_prob]
     df2 = pd.concat(frame2, axis=1, join_axes=[data.index])
-    print df2
+    #print df2
     df2['At_Risk'] = df2['Risk_Prob_B'].map(lambda x: 'Low' if x < 0.5 else 'Medium' if x < 0.75 else 'High')
     print(df2)
     #return df2
