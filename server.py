@@ -90,7 +90,8 @@ app = Flask(__name__)
 def main():
     return render_template("index.html", tables = [df.to_html(classes ='table',index = False)])
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8040) 
+    app.run(host='0.0.0.0', port=8019) 
+    
 ############################################    
 ##VCAP services End
 
