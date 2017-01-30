@@ -91,35 +91,7 @@ app._static_folder = '/Users/praveenkumarb/Downloads/Ex1py/static'
 def main():
     return render_template("index.html", tables = [df2.to_html(classes ='table',index = False)])
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8019)
-   
-########### HTML CODE ############
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
-
-<head>
-<title>Regression Output</title>
-</head>
-
-<body >
-<center><h2> RISK Output </h2></center>
-<center><div>
-<table border="0" style=" text-align: center" cellpadding="1" cellspacing="0" >
-{% for table in tables %}
-
-{{ table|safe }}
-{% endfor %}
-</table>
-</div></center>
-
-<center><footer class="footer">
-<!--<p>&copy; IBM India 2017</p>-->
-</footer></center>
-
-</div>
-</body>
-
-</html>  
+    app.run(host='0.0.0.0', port=8019)  
 ###########################################
 
 ##VCAP services End
