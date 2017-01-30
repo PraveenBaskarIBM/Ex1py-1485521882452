@@ -91,7 +91,7 @@ app._static_folder = '/Users/praveenkumarb/Downloads/Ex1py/static'
 def main():
     return render_template("index.html", tables = [df2.to_html(classes ='table',index = False)])
 if __name__ == '__main__':
-    app.run(host='192.168.43.193', port=8019)  
+    app.run(host='localhost', port=8019)  
 ###########################################
 
 ##VCAP services End
