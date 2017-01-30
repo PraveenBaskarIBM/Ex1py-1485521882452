@@ -81,17 +81,7 @@ with open('tests_model.pkl', 'rb') as f:
     print(df2)
     #return df2
 ## code ends
-
-### FLASK CODE ####
-
-from flask import Flask, render_template
-app = Flask(__name__)
-#app._static_folder = '/Users/praveenkumarb/Downloads/Ex1py/static'
-@app.route("/")
-def homepage():
-    return render_template("index.html", tables = [df.to_html(classes ='table',index = False)])
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8019)  
+ 
 ###########################################
 
 ##VCAP services End
@@ -103,4 +93,15 @@ try:
 except KeyboardInterrupt:
   pass
 httpd.server_close()
+
+### FLASK CODE ####
+
+from flask import Flask, render_template
+app = Flask(__name__)
+#app._static_folder = '/Users/praveenkumarb/Downloads/Ex1py/static'
+@app.route("/")
+def homepage():
+    return render_template("index.html", tables = [df.to_html(classes ='table',index = False)])
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8019) 
 
