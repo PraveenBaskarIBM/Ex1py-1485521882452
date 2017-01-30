@@ -81,11 +81,6 @@ with open('tests_model.pkl', 'rb') as f:
     print(df2)
     #return df2
 ## code ends
-##Flask code
-from flask import Flask, render_template
-app = Flask(__name__)
-app._static_folder = '/Users/praveenkumarb/Downloads/Ex1py/static'
-@app.route("/")
 
 ##VCAP services End
 
