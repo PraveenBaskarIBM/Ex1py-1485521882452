@@ -2,6 +2,7 @@ import os
 import pymongo
 import json
 from pymongo import MongoClient
+from flask import Flask, render_template
 
 try:
   from SimpleHTTPServer import SimpleHTTPRequestHandler as Handler
@@ -82,11 +83,11 @@ with open('tests_model.pkl', 'rb') as f:
     #return df2
 
 ##############
-from flask import Flask, render_template
+
 app = Flask(__name__)
 @app.route("/")
 def main():
-	return render_template('index.html', tables=[df.to_html(classes='table',index=False)])
+	return render_template('index.html', tables=[df2.to_html(classes='table',index=False)])
 if __name__ == "__main__":
 	app.run(host='0.0.0.0', port=8019)
 ################
